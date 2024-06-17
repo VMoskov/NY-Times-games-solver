@@ -27,7 +27,7 @@ def get_letters():
 def get_words(center_letter, letters):
     url = 'https://wordsapiv1.p.rapidapi.com/words/'
 
-    letter_pattern = r'^[' + ''.join(letters) + r']*' + re.escape(center_letter) + r'[' + ''.join(letters) + r']*$'
+    letter_pattern = r'^[' + ''.join(letters) + r']*' + re.escape(center_letter) + r'[' + ''.join(letters) + r']*$'  # regex pattern to match words
     query_string = {'letterPattern': letter_pattern}
 
     headers = {

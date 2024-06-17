@@ -1,3 +1,3 @@
 # NY-Times-games-solver
 
-A simple python script to solve the NY Times games. 
+A simple python script for solving the NY Times games using WordsAPI (https://www.wordsapi.com)

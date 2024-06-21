@@ -28,7 +28,7 @@ def get_words(pattern, letters, used_letters):
 
 
 def match(word, letters, used_letters):
-    return all(word[position] != letter for position, letter in letters.items()) \
+    return all(word[position-1] != letter for position, letter in letters.items()) \
         and all(letter in word for letter in letters.values()) \
         and set(word) - set(used_letters) == set(word) \
         and len(word) == 5
